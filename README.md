@@ -1,5 +1,4 @@
-peplus
-======
+# peplus
 
 Player's Edge Plus (IGT) Slots for the iPhone iPad iOS
 
@@ -13,21 +12,21 @@ I've tested it on an iPad 2 and iPhone 4S both running iOS 5.1.
 
 The following roms are supported (to a certain extent):
 
-PP0158
-PP0516
-PS0014
-PS0022
-PS0043
-PS0045
-PS0308
-PS0615
-PS0716
-X002069P
-XP000019
-XP000112
-XS000006
+- PP0158
+- PP0516
+- PS0014
+- PS0022
+- PS0043
+- PS0045
+- PS0308
+- PS0615
+- PS0716
+- X002069P
+- XP000019
+- XP000112
+- XS000006
 
-Arthur Choung
-| <http://hamstereathamsterworld.com>
-| apps@hamstereathamsterworld.com
+### Arthur Choung
+### <http://hamstereathamsterworld.com>
+### apps@hamstereathamsterworld.com
 
