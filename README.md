@@ -26,7 +26,7 @@ The following roms are supported (to a certain extent):
 - XP000112
 - XS000006
 
-### Arthur Choung
-### <http://hamstereathamsterworld.com>
-### apps@hamstereathamsterworld.com
+Arthur Choung
+| <http://hamstereathamsterworld.com>
+| apps@hamstereathamsterworld.com
 
