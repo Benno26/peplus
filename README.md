@@ -28,8 +28,6 @@ XP000112
 XS000006
 
 Arthur Choung
-
-<http://hamstereathamsterworld.com>
-
-apps@hamstereathamsterworld.com
+| <http://hamstereathamsterworld.com>
+| apps@hamstereathamsterworld.com
 
