@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E3B33D814F6E6F000BC0EE0 /* i2cmem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B33D614F6E6F000BC0EE0 /* i2cmem.m */; };
+		8E4D995C14FDEC9700015FB0 /* gameui.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D995B14FDEC9700015FB0 /* gameui.m */; };
+		8E56EB1814FB8F59006F7D7D /* roms.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E56EB1714FB8F59006F7D7D /* roms.m */; };
+		8EE2D64614F18510005A74D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE2D64514F18510005A74D7 /* UIKit.framework */; };
+		8EE2D64814F18510005A74D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE2D64714F18510005A74D7 /* Foundation.framework */; };
+		8EE2D64A14F18510005A74D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE2D64914F18510005A74D7 /* CoreGraphics.framework */; };
+		8EE2D65014F18510005A74D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EE2D64E14F18510005A74D7 /* InfoPlist.strings */; };
+		8EE2D65214F18510005A74D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2D65114F18510005A74D7 /* main.m */; };
+		8EE2D65614F18510005A74D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2D65514F18510005A74D7 /* AppDelegate.m */; };
+		8EE2D66C14F18547005A74D7 /* glue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2D65F14F18547005A74D7 /* glue.m */; };
+		8EE2D66E14F18547005A74D7 /* HelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2D66314F18547005A74D7 /* HelpView.m */; };
+		8EE2D66F14F18547005A74D7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2D66514F18547005A74D7 /* RootViewController.m */; };
+		8EE2D67014F18547005A74D7 /* ScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2D66714F18547005A74D7 /* ScreenView.m */; };
+		8EE2D67114F18547005A74D7 /* SlotInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2D66914F18547005A74D7 /* SlotInputView.m */; };
+		8EE2D67214F18547005A74D7 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2D66B14F18547005A74D7 /* TableViewController.m */; };
+		8EE2D67F14F185D1005A74D7 /* peplus.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2D67E14F185D1005A74D7 /* peplus.m */; };
+		8EE2D68114F18B13005A74D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE2D68014F18B13005A74D7 /* AudioToolbox.framework */; };
+		8EE2D68314F18B1A005A74D7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE2D68214F18B1A005A74D7 /* QuartzCore.framework */; };
+		8EE2D68514F18B3E005A74D7 /* CoreSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE2D68414F18B3E005A74D7 /* CoreSurface.framework */; };
+		8EE4584515653659007CC664 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE4584415653659007CC664 /* Helper.m */; };
+		8EE4585315653815007CC664 /* pepp0158.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4584615653815007CC664 /* pepp0158.nvram */; };
+		8EE4585415653815007CC664 /* pepp0516.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4584715653815007CC664 /* pepp0516.nvram */; };
+		8EE4585515653815007CC664 /* peps0014.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4584815653815007CC664 /* peps0014.nvram */; };
+		8EE4585615653815007CC664 /* peps0022.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4584915653815007CC664 /* peps0022.nvram */; };
+		8EE4585715653815007CC664 /* peps0043.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4584A15653815007CC664 /* peps0043.nvram */; };
+		8EE4585815653815007CC664 /* peps0045.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4584B15653815007CC664 /* peps0045.nvram */; };
+		8EE4585915653815007CC664 /* peps0308.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4584C15653815007CC664 /* peps0308.nvram */; };
+		8EE4585A15653815007CC664 /* peps0615.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4584D15653815007CC664 /* peps0615.nvram */; };
+		8EE4585B15653815007CC664 /* peps0716.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4584E15653815007CC664 /* peps0716.nvram */; };
+		8EE4585C15653815007CC664 /* pex2069p.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4584F15653815007CC664 /* pex2069p.nvram */; };
+		8EE4585D15653815007CC664 /* pexp0019.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4585015653815007CC664 /* pexp0019.nvram */; };
+		8EE4585E15653815007CC664 /* pexp0112.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4585115653815007CC664 /* pexp0112.nvram */; };
+		8EE4585F15653815007CC664 /* pexs0006.nvram in Resources */ = {isa = PBXBuildFile; fileRef = 8EE4585215653815007CC664 /* pexs0006.nvram */; };
+		8EF1584D14F3B336000F5345 /* i8051.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF1584A14F3B334000F5345 /* i8051.m */; };
+		8EF1585114F3CFFC000F5345 /* ay8910.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF1584F14F3CFFC000F5345 /* ay8910.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E3B33D614F6E6F000BC0EE0 /* i2cmem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = i2cmem.m; sourceTree = "<group>"; };
+		8E3B33D714F6E6F000BC0EE0 /* i2cmem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = i2cmem.h; sourceTree = "<group>"; };
+		8E4D995B14FDEC9700015FB0 /* gameui.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameui.m; sourceTree = "<group>"; };
+		8E56EB1714FB8F59006F7D7D /* roms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = roms.m; sourceTree = "<group>"; };
+		8EE2D64114F18510005A74D7 /* Artslots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artslots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE2D64514F18510005A74D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8EE2D64714F18510005A74D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8EE2D64914F18510005A74D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8EE2D64D14F18510005A74D7 /* peplus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "peplus-Info.plist"; sourceTree = "<group>"; };
+		8EE2D64F14F18510005A74D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EE2D65114F18510005A74D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8EE2D65314F18510005A74D7 /* peplus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "peplus-Prefix.pch"; sourceTree = "<group>"; };
+		8EE2D65414F18510005A74D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8EE2D65514F18510005A74D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8EE2D65D14F18547005A74D7 /* CoreSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreSurface.h; sourceTree = "<group>"; };
+		8EE2D65E14F18547005A74D7 /* glue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glue.h; sourceTree = "<group>"; };
+		8EE2D65F14F18547005A74D7 /* glue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glue.m; sourceTree = "<group>"; };
+		8EE2D66214F18547005A74D7 /* HelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpView.h; sourceTree = "<group>"; };
+		8EE2D66314F18547005A74D7 /* HelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpView.m; sourceTree = "<group>"; };
+		8EE2D66414F18547005A74D7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		8EE2D66514F18547005A74D7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		8EE2D66614F18547005A74D7 /* ScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenView.h; sourceTree = "<group>"; };
+		8EE2D66714F18547005A74D7 /* ScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenView.m; sourceTree = "<group>"; };
+		8EE2D66814F18547005A74D7 /* SlotInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlotInputView.h; sourceTree = "<group>"; };
+		8EE2D66914F18547005A74D7 /* SlotInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlotInputView.m; sourceTree = "<group>"; };
+		8EE2D66A14F18547005A74D7 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		8EE2D66B14F18547005A74D7 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		8EE2D67314F18581005A74D7 /* artslots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = artslots.h; sourceTree = "<group>"; };
+		8EE2D67E14F185D1005A74D7 /* peplus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = peplus.m; sourceTree = "<group>"; };
+		8EE2D68014F18B13005A74D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8EE2D68214F18B1A005A74D7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8EE2D68414F18B3E005A74D7 /* CoreSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSurface.framework; path = System/Library/PrivateFrameworks/CoreSurface.framework; sourceTree = SDKROOT; };
+		8EE4584315653658007CC664 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		8EE4584415653659007CC664 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		8EE4584615653815007CC664 /* pepp0158.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = pepp0158.nvram; sourceTree = "<group>"; };
+		8EE4584715653815007CC664 /* pepp0516.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = pepp0516.nvram; sourceTree = "<group>"; };
+		8EE4584815653815007CC664 /* peps0014.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = peps0014.nvram; sourceTree = "<group>"; };
+		8EE4584915653815007CC664 /* peps0022.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = peps0022.nvram; sourceTree = "<group>"; };
+		8EE4584A15653815007CC664 /* peps0043.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = peps0043.nvram; sourceTree = "<group>"; };
+		8EE4584B15653815007CC664 /* peps0045.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = peps0045.nvram; sourceTree = "<group>"; };
+		8EE4584C15653815007CC664 /* peps0308.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = peps0308.nvram; sourceTree = "<group>"; };
+		8EE4584D15653815007CC664 /* peps0615.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = peps0615.nvram; sourceTree = "<group>"; };
+		8EE4584E15653815007CC664 /* peps0716.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = peps0716.nvram; sourceTree = "<group>"; };
+		8EE4584F15653815007CC664 /* pex2069p.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = pex2069p.nvram; sourceTree = "<group>"; };
+		8EE4585015653815007CC664 /* pexp0019.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = pexp0019.nvram; sourceTree = "<group>"; };
+		8EE4585115653815007CC664 /* pexp0112.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = pexp0112.nvram; sourceTree = "<group>"; };
+		8EE4585215653815007CC664 /* pexs0006.nvram */ = {isa = PBXFileReference; lastKnownFileType = file; path = pexs0006.nvram; sourceTree = "<group>"; };
+		8EF1584A14F3B334000F5345 /* i8051.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = i8051.m; sourceTree = "<group>"; };
+		8EF1584B14F3B334000F5345 /* i8051.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = i8051.h; sourceTree = "<group>"; };
+		8EF1584F14F3CFFC000F5345 /* ay8910.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ay8910.m; sourceTree = "<group>"; };
+		8EF1585014F3CFFC000F5345 /* ay8910.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ay8910.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EE2D63E14F18510005A74D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE2D68514F18B3E005A74D7 /* CoreSurface.framework in Frameworks */,
+				8EE2D68314F18B1A005A74D7 /* QuartzCore.framework in Frameworks */,
+				8EE2D68114F18B13005A74D7 /* AudioToolbox.framework in Frameworks */,
+				8EE2D64614F18510005A74D7 /* UIKit.framework in Frameworks */,
+				8EE2D64814F18510005A74D7 /* Foundation.framework in Frameworks */,
+				8EE2D64A14F18510005A74D7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EE2D63614F1850E005A74D7 = {
+			isa = PBXGroup;
+			children = (
+				8EE2D68414F18B3E005A74D7 /* CoreSurface.framework */,
+				8EE2D68214F18B1A005A74D7 /* QuartzCore.framework */,
+				8EE2D68014F18B13005A74D7 /* AudioToolbox.framework */,
+				8EE2D64B14F18510005A74D7 /* Artslots */,
+				8EE2D64414F18510005A74D7 /* Frameworks */,
+				8EE2D64214F18510005A74D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EE2D64214F18510005A74D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EE2D64114F18510005A74D7 /* Artslots.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EE2D64414F18510005A74D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EE2D64514F18510005A74D7 /* UIKit.framework */,
+				8EE2D64714F18510005A74D7 /* Foundation.framework */,
+				8EE2D64914F18510005A74D7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EE2D64B14F18510005A74D7 /* Artslots */ = {
+			isa = PBXGroup;
+			children = (
+				8EE2D65414F18510005A74D7 /* AppDelegate.h */,
+				8EE2D65514F18510005A74D7 /* AppDelegate.m */,
+				8EE2D65C14F18547005A74D7 /* CoreSurface */,
+				8EE2D65E14F18547005A74D7 /* glue.h */,
+				8EE2D65F14F18547005A74D7 /* glue.m */,
+				8EE4584315653658007CC664 /* Helper.h */,
+				8EE4584415653659007CC664 /* Helper.m */,
+				8EE2D66214F18547005A74D7 /* HelpView.h */,
+				8EE2D66314F18547005A74D7 /* HelpView.m */,
+				8EE2D66414F18547005A74D7 /* RootViewController.h */,
+				8EE2D66514F18547005A74D7 /* RootViewController.m */,
+				8EE2D66614F18547005A74D7 /* ScreenView.h */,
+				8EE2D66714F18547005A74D7 /* ScreenView.m */,
+				8EE2D66814F18547005A74D7 /* SlotInputView.h */,
+				8EE2D66914F18547005A74D7 /* SlotInputView.m */,
+				8EE2D66A14F18547005A74D7 /* TableViewController.h */,
+				8EE2D66B14F18547005A74D7 /* TableViewController.m */,
+				8EE2D67314F18581005A74D7 /* artslots.h */,
+				8EF1584A14F3B334000F5345 /* i8051.m */,
+				8EF1584B14F3B334000F5345 /* i8051.h */,
+				8EF1584F14F3CFFC000F5345 /* ay8910.m */,
+				8EF1585014F3CFFC000F5345 /* ay8910.h */,
+				8E3B33D614F6E6F000BC0EE0 /* i2cmem.m */,
+				8E3B33D714F6E6F000BC0EE0 /* i2cmem.h */,
+				8E4D995B14FDEC9700015FB0 /* gameui.m */,
+				8E56EB1714FB8F59006F7D7D /* roms.m */,
+				8EE2D67E14F185D1005A74D7 /* peplus.m */,
+				8EE2D64C14F18510005A74D7 /* Supporting Files */,
+			);
+			path = Artslots;
+			sourceTree = "<group>";
+		};
+		8EE2D64C14F18510005A74D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EE4584615653815007CC664 /* pepp0158.nvram */,
+				8EE4584715653815007CC664 /* pepp0516.nvram */,
+				8EE4584815653815007CC664 /* peps0014.nvram */,
+				8EE4584915653815007CC664 /* peps0022.nvram */,
+				8EE4584A15653815007CC664 /* peps0043.nvram */,
+				8EE4584B15653815007CC664 /* peps0045.nvram */,
+				8EE4584C15653815007CC664 /* peps0308.nvram */,
+				8EE4584D15653815007CC664 /* peps0615.nvram */,
+				8EE4584E15653815007CC664 /* peps0716.nvram */,
+				8EE4584F15653815007CC664 /* pex2069p.nvram */,
+				8EE4585015653815007CC664 /* pexp0019.nvram */,
+				8EE4585115653815007CC664 /* pexp0112.nvram */,
+				8EE4585215653815007CC664 /* pexs0006.nvram */,
+				8EE2D64D14F18510005A74D7 /* peplus-Info.plist */,
+				8EE2D64E14F18510005A74D7 /* InfoPlist.strings */,
+				8EE2D65114F18510005A74D7 /* main.m */,
+				8EE2D65314F18510005A74D7 /* peplus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EE2D65C14F18547005A74D7 /* CoreSurface */ = {
+			isa = PBXGroup;
+			children = (
+				8EE2D65D14F18547005A74D7 /* CoreSurface.h */,
+			);
+			path = CoreSurface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EE2D64014F18510005A74D7 /* peplus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EE2D65914F18510005A74D7 /* Build configuration list for PBXNativeTarget "peplus" */;
+			buildPhases = (
+				8EE2D63D14F18510005A74D7 /* Sources */,
+				8EE2D63E14F18510005A74D7 /* Frameworks */,
+				8EE2D63F14F18510005A74D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = peplus;
+			productName = Artslots;
+			productReference = 8EE2D64114F18510005A74D7 /* Artslots.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EE2D63814F1850E005A74D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 8EE2D63B14F1850E005A74D7 /* Build configuration list for PBXProject "peplus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8EE2D63614F1850E005A74D7;
+			productRefGroup = 8EE2D64214F18510005A74D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EE2D64014F18510005A74D7 /* peplus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EE2D63F14F18510005A74D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE2D65014F18510005A74D7 /* InfoPlist.strings in Resources */,
+				8EE4585315653815007CC664 /* pepp0158.nvram in Resources */,
+				8EE4585415653815007CC664 /* pepp0516.nvram in Resources */,
+				8EE4585515653815007CC664 /* peps0014.nvram in Resources */,
+				8EE4585615653815007CC664 /* peps0022.nvram in Resources */,
+				8EE4585715653815007CC664 /* peps0043.nvram in Resources */,
+				8EE4585815653815007CC664 /* peps0045.nvram in Resources */,
+				8EE4585915653815007CC664 /* peps0308.nvram in Resources */,
+				8EE4585A15653815007CC664 /* peps0615.nvram in Resources */,
+				8EE4585B15653815007CC664 /* peps0716.nvram in Resources */,
+				8EE4585C15653815007CC664 /* pex2069p.nvram in Resources */,
+				8EE4585D15653815007CC664 /* pexp0019.nvram in Resources */,
+				8EE4585E15653815007CC664 /* pexp0112.nvram in Resources */,
+				8EE4585F15653815007CC664 /* pexs0006.nvram in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EE2D63D14F18510005A74D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE2D65214F18510005A74D7 /* main.m in Sources */,
+				8EE2D65614F18510005A74D7 /* AppDelegate.m in Sources */,
+				8EE2D66C14F18547005A74D7 /* glue.m in Sources */,
+				8EE2D66E14F18547005A74D7 /* HelpView.m in Sources */,
+				8EE2D66F14F18547005A74D7 /* RootViewController.m in Sources */,
+				8EE2D67014F18547005A74D7 /* ScreenView.m in Sources */,
+				8EE2D67114F18547005A74D7 /* SlotInputView.m in Sources */,
+				8EE2D67214F18547005A74D7 /* TableViewController.m in Sources */,
+				8EE2D67F14F185D1005A74D7 /* peplus.m in Sources */,
+				8EF1584D14F3B336000F5345 /* i8051.m in Sources */,
+				8EF1585114F3CFFC000F5345 /* ay8910.m in Sources */,
+				8E3B33D814F6E6F000BC0EE0 /* i2cmem.m in Sources */,
+				8E56EB1814FB8F59006F7D7D /* roms.m in Sources */,
+				8E4D995C14FDEC9700015FB0 /* gameui.m in Sources */,
+				8EE4584515653659007CC664 /* Helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8EE2D64E14F18510005A74D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EE2D64F14F18510005A74D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E56EB1514FA8E36006F7D7D /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		8E56EB1614FA8E36006F7D7D /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Artslots/peplus-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				INFOPLIST_FILE = "Artslots/peplus-Info.plist";
+				PRODUCT_NAME = peplus;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		8EE2D65714F18510005A74D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EE2D65814F18510005A74D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EE2D65A14F18510005A74D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Artslots/peplus-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				INFOPLIST_FILE = "Artslots/peplus-Info.plist";
+				PRODUCT_NAME = peplus;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8EE2D65B14F18510005A74D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Artslots/peplus-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				INFOPLIST_FILE = "Artslots/peplus-Info.plist";
+				PRODUCT_NAME = peplus;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EE2D63B14F1850E005A74D7 /* Build configuration list for PBXProject "peplus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE2D65714F18510005A74D7 /* Debug */,
+				8EE2D65814F18510005A74D7 /* Release */,
+				8E56EB1514FA8E36006F7D7D /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EE2D65914F18510005A74D7 /* Build configuration list for PBXNativeTarget "peplus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE2D65A14F18510005A74D7 /* Debug */,
+				8EE2D65B14F18510005A74D7 /* Release */,
+				8E56EB1614FA8E36006F7D7D /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EE2D63814F1850E005A74D7 /* Project object */;
+}
